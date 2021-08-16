@@ -9,7 +9,7 @@ find = mt[0][1]
 cnt = 1
 for i in range(1, N):
     if mt[i][0] >= find:
-        end = mt[i][1]
+        find = mt[i][1]
         cnt += 1
 print(cnt)
 
