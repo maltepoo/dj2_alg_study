@@ -1,3 +1,4 @@
+#2839. 설탕 배달
 #풀이 1
 sugar = int(input())
 cnt = 0

@@ -1,3 +1,4 @@
+#12782. 비트 우정지수
 T = int(input())
 for tc in range(T):
     N, M = input().split()

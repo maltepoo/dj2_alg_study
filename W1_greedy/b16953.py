@@ -1,3 +1,4 @@
+#16953. A → B
 A, B = list(map(int, input().split()))
 cnt = 1
 

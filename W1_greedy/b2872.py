@@ -1,5 +1,5 @@
+#2872. 우리집엔 도서관이 있어
 import sys
-
 T = int(input())
 books = [int(sys.stdin.readline())]
 cnt = 0

@@ -1,3 +1,4 @@
+#11399. ATM
 people = int(input())
 time = sorted(list(map(int,input().split())))
 

@@ -1,3 +1,4 @@
+#1789. 수들의 합
 n = int(input())
 plus = 0
 li = []

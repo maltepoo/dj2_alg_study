@@ -1,3 +1,4 @@
+#1541. 잃어버린 괄호
 n = input()
 minus = n.split("-")
 tot = []

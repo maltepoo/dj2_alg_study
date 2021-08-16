@@ -1,3 +1,4 @@
+#11047. 동전 0
 N, K = map(int, input().split())
 coins = []
 cnt = 0

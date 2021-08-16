@@ -1,3 +1,4 @@
+#13305. 주유소
 C = int(input())
 R = list(map(int,input().split()))
 P = list(map(int,input().split()))

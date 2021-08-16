@@ -1,3 +1,4 @@
+#10162. 전자레인지
 str_time = input()
 time = int(str_time)
 b1, b2, b3 = 0, 0, 0
