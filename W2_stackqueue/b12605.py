@@ -8,7 +8,6 @@ for tc in range(1, N+1):
     #스택풀이
     L = input().split()
     stack = []
-    ans = []
     for l in L:
         stack.append(l)
     print("Case #{}:".format(tc), end=" ")
