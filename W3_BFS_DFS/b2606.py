@@ -28,5 +28,4 @@ for _ in range(net):
     V, E = map(int, input().split())
     adj[V][E] = 1
     adj[E][V] = 1
-
 print(dfs(C))
