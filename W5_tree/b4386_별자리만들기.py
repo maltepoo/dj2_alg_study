@@ -1,5 +1,3 @@
-import sys
-sys.stdin = open("input.txt")
 #4386. 별자리 만들기
 def find(x):
     if parent[x] == x:
@@ -20,18 +18,19 @@ for i in range(N-1): # 모든 별들과의 각각 거리 계산
     for j in range(i+1, N):
         d = ((stars[i][0] - stars[j][0]) ** 2 + (stars[i][1] - stars[j][1]) ** 2) ** 0.5
         edges.append((d, i, j))
-edges.sort() # 정렬 하면 맨 앞 값을 기준으로 정렬(lambda 쓸 필요 x)
-print(edges)
+edges.sort() # 정렬 하면 맨 앞 값을 기준으로 정렬(d를 0번에 넣어서 lambda 쓸 필요 x)
 res = 0
-# while edges:
-#     p = edges.pop()
-#     cost, x, y = p
-#     if find(x) != find(y):
-#         union(x, y)
-#         res += cost
-
 for cost, x, y in edges:
     if find(x) != find(y):
         union(x, y)
         res += cost
 print('{:.2f}'.format(res))
+
+"""
+while edges:
+    p = edges.pop(0)
+    cost, x, y = p
+    if find(x) != find(y):
+        union(x, y)
+        res += cost
+"""
