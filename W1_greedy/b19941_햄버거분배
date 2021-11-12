@@ -1,0 +1,11 @@
+#19941. 햄버거 분배
+N, K = map(int, input().split())
+ham, cnt = list(input()), 0
+for i in range(N):
+    if ham[i] == 'P':
+        for j in range(i-K, i+K+1):
+            if N > j >= 0 and ham[j] == 'H':
+                ham[j] = 0
+                cnt += 1
+                break
+print(cnt)
